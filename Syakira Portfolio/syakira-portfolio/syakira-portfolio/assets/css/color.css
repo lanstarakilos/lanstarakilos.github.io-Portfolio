@@ -1,0 +1,15 @@
+:root {
+  --SecondaryColor: #2f3a45;
+  --PrimaryColor: #0a1929;
+  --MainColor: #ffffff;
+  --bgSecondary: #f3f6f9;
+  --LightMoreOrange: #f5966e;
+  --DotsColor: #f5966e;
+  --Button-Color: #fff;
+  --WordPresentation: #333333;
+  --ImageCover: rgba(245, 150, 110, 0.7);
+  --with_bg_heading: #132f4c;
+  --card-bg: #f16e36;
+  --ListHover: #fff;
+  --listborder: #e5e8ec;
+}

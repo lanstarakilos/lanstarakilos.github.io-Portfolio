@@ -1,0 +1,240 @@
+header {
+  left: 0%;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+body {
+  margin-bottom: 10rem;
+}
+main {
+  padding: 0rem;
+  display: block !important;
+}
+.top-main-area {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work .top-main-area > h1 {
+  font-size: 4rem;
+
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.work .top-main-area > p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work .work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.work .work-grid img {
+  width: 100%;
+}
+
+.work-grid .work {
+  position: relative;
+}
+.work-grid .work .presentation-area-hide-information {
+  display: none;
+}
+.work .work-grid .left-side {
+  position: sticky;
+
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.work .work-grid .left-side > .count,
+.work .work-grid .left-side > .work-course {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--WordPresentation);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.work .work-grid .left-side > .count {
+  font-size: 2rem;
+}
+.work .work-grid .left-side > .count {
+  top: 20px;
+}
+.work .work-grid .left-side > .work-course {
+  bottom: 20px;
+}
+
+/* middle side */
+.work .work-grid .left-side > .middle-presentation {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work .work-grid .left-side > .middle-presentation > * {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--WordPresentation);
+}
+
+.work .work-grid .left-side > .middle-presentation a {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.work .work-grid .left-side > .middle-presentation .project-type {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.work .work-grid .left-side > .middle-presentation .project-description {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.work .work-grid .right-side > * + * {
+  margin-top: 20rem;
+}
+
+.work .work-grid .right-side .images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work .work-grid .right-side .images img {
+  width: 100%;
+  border-radius: 20px;
+}
+.work .work-grid .right-side .images .verticleImg {
+  object-fit: contain;
+  height: unset !important;
+}
+
+.work-grid .work > .work-presentation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-grid .work > .work-presentation > p {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.work-grid .work > .work-presentation > .buttons-wrapper {
+  margin-top: 1rem;
+}
+.work .work-grid div {
+  transition: 0.4s ease all;
+}
+.work-grid .work > .work-presentation > .buttons-wrapper > *:nth-child(1) {
+  width: 180px;
+}
+
+@media screen and (max-width: 900px) {
+  .work .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work .work-grid .right-side .images {
+    height: 100%;
+  }
+  .work .work-grid .right-side .images img {
+    position: relative !important;
+    display: block;
+    width: 250px !important;
+    margin-bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .work .work-grid .right-side .images img:nth-child(2) {
+    right: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .work .work-grid .right-side .images img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    transform: translateY(0%);
+  }
+
+  .work .work-grid .right-side .images img:nth-child(3) {
+    width: 230px;
+
+    bottom: 0%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work > h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work > p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .work-grid .work > .work-presentation {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .work-grid .work > .work-presentation > p {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work .top-main-area > h1 {
+    font-size: 2rem;
+  }
+
+  .work .work-grid .left-side > .middle-presentation a {
+    font-size: 2rem;
+  }
+  .work .work-grid .right-side .images img {
+    width: 100% !important;
+    height: unset !important;
+  }
+  .work .work-grid .left-side > .middle-presentation .project-description {
+    font-size: 15px;
+  }
+  .work .top-main-area > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .work > h1 {
+    font-size: 2.7rem;
+  }
+  .work .top-main-area > h1 {
+    font-size: 3rem;
+  }
+  .work .top-main-area > p {
+    font-size: 1rem;
+  }
+}
